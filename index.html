@@ -51,7 +51,8 @@
     </div>
       <script>
     $('#input-form').one('submit',function(){
-        var inputName = encodeURIComponent($('#input-name').val());
+        var inputName = encodeURIComponent($('#input-name').val())
+        console.log(inputName)
         var baseURL = 'https://docs.google.com/forms/d/1GLGin8HKajEMQAHS0v0zYCznMKsr0nvYGvVEwJIJJT8/formResponse?entry.1000000=';
         var submitRef = '&submit=Submit';
         var submitURL = (baseURL + inputName + submitRef);
