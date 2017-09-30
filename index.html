@@ -9,6 +9,7 @@
     <link type="text/css" rel="stylesheet" href="./res/styles.css">
   </head>
   <body>
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
     <div class="bg-image"></div>
     <div>
       <div id="loading" class="loading-state" style="display: none;"></div>
@@ -27,11 +28,11 @@
                   </div>
                 </div>
                 <div class="row">
-                  <form class="form form-horizontal user-signup__form" name="form" novalidate="" action="//adrienjoly.us12.list-manage.com/subscribe/post?u=c1cfafd58fc9699f6d5a661e2&amp;id=a586ea22ee" method="POST">
+                  <form class="form form-horizontal user-signup__form" name="form" id="input-form" action="" method="POST">
                     <div class="mt-table--full">
                       <div class="mt-td--centered-vertical user-signup__col-1">
                         <div class="user-signup__form-group m-lg-v form-group col-sm-12">
-                          <input type="email" name="EMAIL" class="form-control form-control__input user-signup__email" pattern="/^[a-zA-Z0-9+-_]+(\.[_a-zA-Z0-9+]+)*@[a-zA-Z0-9+-_]+(\.[a-zA-Z0-9+-_]+)*(\.[a-zA-Z]+)$/" placeholder="Email" aria-required="true" required="required">
+                          <input type="email" name="EMAIL" id="input-name" class="form-control form-control__input user-signup__email" pattern="/^[a-zA-Z0-9+-_]+(\.[_a-zA-Z0-9+]+)*@[a-zA-Z0-9+-_]+(\.[a-zA-Z0-9+-_]+)*(\.[a-zA-Z]+)$/" placeholder="Email" aria-required="true" required="required">
                         </div>        
                       </div>
                       <div class="mt-td--centered-vertical user-signup__col-2">
@@ -48,5 +49,16 @@
         </section>
       </div>
     </div>
+      <script>
+    $('#input-form').one('submit',function(){
+        var inputName = encodeURIComponent($('#input-name').val());
+        var baseURL = 'https://docs.google.com/forms/d/1FAIpQLScqF9MpSYVo9RDJ8o_nAo860tvGJTeicoq-Bz7bjgfX4rRnyg/formResponse?entry.1000000=';
+        var submitRef = '&submit=Submit';
+        var submitURL = (baseURL + inputName + submitRef);
+        console.log(submitURL);
+        $(this)[0].action=submitURL;
+        $('#input-name').addClass('active').val('Thank You!');
+    });
+</script>
   </body>
 </html>
