@@ -52,9 +52,7 @@
       <script>
     $('#input-form').one('submit',function(){
         var inputName = encodeURIComponent($('#input-name').val())
-        console.log(inputName)
-       /* 1GLGin8HKajEMQAHS0v0zYCznMKsr0nvYGvVEwJIJJT8 */
-        var baseURL = 'https://docs.google.com/forms/d/1FAIpQLScqF9MpSYVo9RDJ8o_nAo860tvGJTeicoq-Bz7bjgfX4rRnyg/formResponse?fvv=';
+        var baseURL = 'https://docs.google.com/forms/d/1GLGin8HKajEMQAHS0v0zYCznMKsr0nvYGvVEwJIJJT8/formResponse?fvv=';
         var submitRef = '8103779287480117114';
         var submitURL = (baseURL + inputName + submitRef);
         console.log(submitURL);
