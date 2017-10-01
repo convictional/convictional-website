@@ -28,16 +28,21 @@
                   </div>
                 </div>
                 <div class="row">
-                  <form class="form form-horizontal user-signup__form" novalidate="" name="form" id="input-form" action="" method="POST" target="_self">
+                  <form class="form form-horizontal user-signup__form" novalidate="" name="form" id="mG61Hd" action="" method="POST" target="_self">
                     <div class="mt-table--full">
                       <div class="mt-td--centered-vertical user-signup__col-1">
                         <div class="user-signup__form-group m-lg-v form-group col-sm-12">
-                          <input type="email" name="EMAIL" id="input-name" class="form-control form-control__input user-signup__email" pattern="/^[a-zA-Z0-9+-_]+(\.[_a-zA-Z0-9+]+)*@[a-zA-Z0-9+-_]+(\.[a-zA-Z0-9+-_]+)*(\.[a-zA-Z]+)$/" placeholder="Email" aria-required="true" required="required">
+                          <input type="email" name="emailAddress" id="input-name" class="form-control form-control__input user-signup__email" pattern="/^[a-zA-Z0-9+-_]+(\.[_a-zA-Z0-9+]+)*@[a-zA-Z0-9+-_]+(\.[a-zA-Z0-9+-_]+)*(\.[a-zA-Z]+)$/" placeholder="Email" aria-required="true" required="required">
+                          <input type="email" class="quantumWizTextinputPaperinputInput exportInput" autocomplete="email" tabindex="0" aria-label="Your email" name="emailAddress" value="" required dir="auto" data-initial-dir="auto" data-initial-value=""/>
+                          <input type="hidden" name="fvv" value="1">
+                          <input type="hidden" name="draftResponse" value="[null,null,&quot;-6997855034227612613&quot;]">
+                          <input type="hidden" name="pageHistory" value="0">
+                          <input type="hidden" name="fbzx" value="-6997855034227612613">
                         </div>        
                       </div>
                       <div class="mt-td--centered-vertical user-signup__col-2">
                         <div class="user-signup__form-group m-lg-v form-group text-center">
-                          <button type="submit" class="btn btn-default submit user-signup__submit"><span>SUBMIT</span></button>
+                          <button name="fbzx" type="submit" class="btn btn-default submit user-signup__submit"><span>SUBMIT</span></button>
                         </div>
                       </div>
                     </div>
@@ -49,8 +54,8 @@
         </section>
       </div>
     </div>
-      <script>
-    $('#input-form').one('submit',function(){
+    <script>
+    $('#mG61Hd').one('submit',function(){
         var inputName = encodeURIComponent($('#input-name').val())
         /*
         d/e/1FAIpQLScqF9MpSYVo9RDJ8o_nAo860tvGJTeicoq-Bz7bjgfX4rRnyg
@@ -63,6 +68,6 @@
         $(this)[0].action=submitURL
         $('#input-name').addClass('active').val('Thank You!')
     })
-</script>
+    </script>
   </body>
 </html>
