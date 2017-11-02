@@ -51,7 +51,7 @@
                     <div class="mt-table--full">
                       <div class="mt-td--centered-vertical user-signup__col-1">
                         <div class="user-signup__form-group m-lg-v form-group col-sm-12">
-                          <input type="email" class="form-control form-control__input user-signup__email" placeholder="Email" aria-required="true" required="required">
+                          <input type="email" id="email" class="form-control form-control__input user-signup__email" placeholder="Email" aria-required="true" required="required">
                         </div>
                       </div>
                       <div class="mt-td--centered-vertical user-signup__col-2">
@@ -77,7 +77,7 @@
     <script>
       $("#emailForm").submit(function(event) {
         event.preventDefault()
-        alert("Thank you! We will keep you posted.")
+        document.getElementById('email').value = 'Thank you!'
       })
     </script>
     <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4004130.js"></script>
