@@ -7,14 +7,6 @@
     <link rel="icon" href="favicon.ico?v=2">
     <link type="text/css" rel="stylesheet" href="./res/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="./res/styles.css">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108451611-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-108451611-1');
-    </script>
-    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4004130.js"></script>
     <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
   </head>
   <body>
@@ -55,7 +47,7 @@
                   </div>
                 </div>
                 <div class="row">
-                  <form class="form form-horizontal user-signup__form" method="POST" target="_self" action="#">
+                  <form class="form form-horizontal user-signup__form" method="POST" id="emailForm" target="_self" action="#">
                     <div class="mt-table--full">
                       <div class="mt-td--centered-vertical user-signup__col-1">
                         <div class="user-signup__form-group m-lg-v form-group col-sm-12">
@@ -75,5 +67,18 @@
           </div>
       </div>
     </div>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108451611-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-108451611-1');
+    </script>
+    <script>
+      $("#emailForm").submit(function(event) {
+        event.preventDefault()
+      })
+    </script>
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4004130.js"></script>
   </body>
 </html>
