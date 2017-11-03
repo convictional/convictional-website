@@ -1,9 +1,5 @@
 @import  "//fonts.googleapis.com/css?family=Montserrat";
 
-html {
-  height: 100%;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -12,21 +8,10 @@ body {
   min-height: 100%;
   font-family: "Montserrat",sans-serif;
   line-height: 1.42857;
-  font-size: 17px;
+  font-size: 16px;
   background-color: rgba(0,0,0,1);
   color: #FFF;
   word-wrap: normal;
-}
-
-a,a:visited,a:active,a:hover {
-  color: #FFF;
-  text-decoration: underline;
-}
-
-section {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  position: relative;
 }
 
 .bg-image {
@@ -115,13 +100,6 @@ section {
   margin-right: auto;
 }
 
-.spacer {
-  z-index: 0;
-  width: 2.52px;
-  margin-bottom: -15px;
-  margin-top: -15px;
-}
-
 .clean-hr {
   z-index: 0;
   width: 100%;
@@ -164,7 +142,6 @@ section {
 }
 
 .bg-image {
-  /* photo from: https://www.pexels.com/photo/dawn-landscape-mountains-nature-1852/ */
   background-image: url(/res/background.jpg);
   background-attachment: scroll;
   background-position: 50% 50%;
@@ -180,14 +157,14 @@ h1 {
 
 .form-control__input {
   border-width: 0;
-  border-radius: 0;
+  border-radius: 5px;
   font-size: 14px;
   height: 50px;
 }
 
 .user-signup__submit {
   border-width: 0;
-  border-radius: 0;
+  border-radius: 5px;
   font-size: 14px;
   padding-right: 20px;
   padding-left: 20px;
@@ -238,10 +215,19 @@ h1 {
 }
 
 .aNav {
+  color: #FFF;
   text-decoration: none;
+  font-size: 16px;
 }
 
 .btnNav {
   margin-top: 8px;
+  margin-left: 10px;
+  margin-right: 10px;
   background-color: transparent;
+}
+
+a:hover {
+  color: #FFF;
+  text-decoration:none;
 }
