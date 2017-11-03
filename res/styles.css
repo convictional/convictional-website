@@ -220,3 +220,28 @@ h1 {
     font-size: 75px;
   }
 }
+
+.navbar-default {
+  background-color: transparent;
+  border: 0px;
+}
+
+.navbar-brand {
+  color: #FFF !important;
+}
+
+.btnSignUp {
+  margin-left: 10px;
+  margin-top: 8px;
+  background-color: transparent;
+  outline: white 1px solid;
+}
+
+.aNav {
+  text-decoration: none;
+}
+
+.btnNav {
+  margin-top: 8px;
+  background-color: transparent;
+}
